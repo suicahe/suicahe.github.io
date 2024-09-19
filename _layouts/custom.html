@@ -12,7 +12,7 @@
         padding: 0;
         box-sizing: border-box;
       }
-  
+
       /* 绿色背景色块 */
       .green-block {
         position: relative;
@@ -23,7 +23,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-  
+
       /* 灰色色块 */
       .grey-block {
         position: absolute;
@@ -36,51 +36,107 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 20px;
       }
+
+      /* 布局和图标样式 */
+      .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .view {
+        margin-bottom: 20px;
+      }
+
+      .group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .image_2 {
+        width: 30px; /* 调整图标大小 */
+        height: 30px;
+        margin-right: 15px; /* 调整图标和文字的间距 */
+      }
+
+      .font {
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .ml-42 {
+        margin-left: 15px;
+      }
+
+      .text {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .text_2 {
+        margin-left: 38px;
+      }
+
+      .text_3 {
+        margin-left: 36px;
+      }
     </style>
 
     <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}" />
-    <link rel="stylesheet" href="{{ "/assets/css/Homepage.css" | relative_url }}" />
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/Homepage.css" | relative_url }}" /> -->
     <script type="text/javascript" src="{{ "/assets/js/Homepage.js" | relative_url }}"></script>
   </head>
   <body>
     <div class="green-block">
       <!-- 灰色色块 -->
       <div class="grey-block">
-    <div class="flex-col justify-start relative page">
-      
-      <div class="flex-col section pos">
-        <span class="self-start font text">西瓜河曲</span>
-        <div class="flex-row items-center self-stretch group view">
-          <img
-            class="image_2"
-            src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=82424cff76b8b9d4a59b96c7c961ffee.png"
-            alt="看嘘"
-          />
-          <span class="ml-42 font">看嘘</span>
-        </div>
-        <div class="flex-row items-center self-stretch group">
-          <img
-            class="image_2"
-            src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=850b0200ea56031c0328202a730a3003.png"
-            alt="看电戏"
-          />
-          <span class="ml-42 font">看电戏</span>
-        </div>
-        <div class="flex-row items-center self-stretch group">
-          <img
-            class="image_2"
-            src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=c4ac1e473c3065b02c888451b1789634.png"
-            alt="搭帐胖"
-          />
-          <span class="ml-38 font text_2">搭帐胖</span>
-        </div>
-        <div class="flex-row items-center self-stretch group">
-          <img
-            class="image_2"
-            src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=a9b5d09c4be865a45a2d8b776fc8405f.png"
-            alt="拿钱换登西"
-          />
-          <span class="ml-36 font text_3">拿钱换登西</span>
+        <div class="flex-col justify-start relative page">
+          <div class="flex-col section pos">
+            <span class="self-start font text">西瓜河曲</span>
+
+            <div class="flex-row items-center self-stretch group view">
+              <img
+                class="image_2"
+                src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=82424cff76b8b9d4a59b96c7c961ffee.png"
+                alt="看嘘"
+              />
+              <span class="font">看嘘</span>
+            </div>
+
+            <div class="flex-row items-center self-stretch group">
+              <img
+                class="image_2"
+                src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=850b0200ea56031c0328202a730a3003.png"
+                alt="看电戏"
+              />
+              <span class="font">看电戏</span>
+            </div>
+
+            <div class="flex-row items-center self-stretch group">
+              <img
+                class="image_2"
+                src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=c4ac1e473c3065b02c888451b1789634.png"
+                alt="搭帐胖"
+              />
+              <span class="font">搭帐胖</span>
+            </div>
+
+            <div class="flex-row items-center self-stretch group">
+              <img
+                class="image_2"
+                src="https://ide.code.fun/api/image?token=66ea99140412d90011fd8e91&name=a9b5d09c4be865a45a2d8b776fc8405f.png"
+                alt="拿钱换登西"
+              />
+              <span class="font">拿钱换登西</span>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
